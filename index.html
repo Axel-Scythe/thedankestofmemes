@@ -68,6 +68,7 @@
 
 <header>
 	<h1>Memes Are Great</h1>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </header>
 
 <nav>
@@ -96,7 +97,7 @@
 	<img src="gangsta.gif">
 </article>
 
-
+	
 	<script type="text/javascript">
 		function blueText(){
 			document.getElementById("text").style.color = "blue";
@@ -111,6 +112,11 @@
 			document.getElementById("loss1").style.color = "brown";
 			document.getElementById("loss2").style.color = "brown";
 			document.getElementById("header").style.color = "brown";	
+		}
+		
+		function gifSpam() {
+			var gif = "<img src='gangsta.gif'>"
+			$(".container").append(gif);
 		}
 	</script>
 
